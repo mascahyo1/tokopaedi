@@ -4,6 +4,7 @@
         <div class="text-xl text-bold text-center dark:text-white mb-3 px-4">
             Tentang Kami
         </div>
+        <img src="https://dummyimage.com/3840x2160/FF0000/FFFFFF" alt="about us" class="w-full p-4 mb-3 rounded-lg">
         <div class="dark:text-white text-justify mb-3 px-4">
             Tokopaedi adalah sebuah platform e-commerce yang didedikasikan untuk menyediakan berbagai kebutuhan sehari-hari dengan kenyamanan berbelanja secara online. Kami percaya bahwa berbelanja dapat menjadi pengalaman yang menyenangkan, praktis, dan terjangkau bagi semua orang.
 
