@@ -7,23 +7,23 @@
             <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
               <!-- Item 1 -->
               <div class="duration-700 ease-in-out absolute inset-0 transition-transform transform -translate-x-full z-10 hidden" data-carousel-item="">
-                <img src="https://dummyimage.com/3840x2160/FF0000/FFFFFF" class="object-cover absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                <img src="/assets/img/1.jpg" class="object-cover absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
               </div>
               <!-- Item 2 -->
               <div class="duration-700 ease-in-out absolute inset-0 transition-transform transform -translate-x-full z-10 hidden" data-carousel-item="active">
-                <img src="https://dummyimage.com/3840x2160/FF0000/FFFFFF" class="object-cover absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                <img src="/assets/img/2.jpg" class="object-cover absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
               </div>
               <!-- Item 3 -->
               <div class="duration-700 ease-in-out absolute inset-0 transition-transform transform -translate-x-full z-10" data-carousel-item="">
-                <img src="https://dummyimage.com/3840x2160/0000FF/FFFFFF" class="object-cover absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                <img src="/assets/img/3.jpg" class="object-cover absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
               </div>
               <!-- Item 4 -->
               <div class="duration-700 ease-in-out absolute inset-0 transition-transform transform translate-x-0 z-20" data-carousel-item="">
-                <img src=" https://dummyimage.com/3840x2160/FFFF00/000000" class="object-cover absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                <img src=" /assets/img/4.jpg" class="object-cover absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
               </div>
               <!-- Item 5 -->
               <div class="duration-700 ease-in-out absolute inset-0 transition-transform transform z-10 translate-x-full" data-carousel-item="">
-                <img src="https://dummyimage.com/3840x2160/FF00FF/FFFFFF" class="object-cover absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                <img src="/assets/img/5.jpg" class="object-cover absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
               </div>
             </div>
             <!-- Slider controls -->
