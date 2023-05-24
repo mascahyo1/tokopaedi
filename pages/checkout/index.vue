@@ -205,7 +205,7 @@
                 <div class="text-lg dark:text-white">Total: Rp.5.000.000</div>
             </div>
             <div class="mt-3 mb-3">
-                <nuxt-link to="/pay" class="text-center block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"><i class="mdi mdi-lock-outline mr-1"></i> PAY NOW</nuxt-link>
+                <button @click="createTransactionToken" class="text-center block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"><i class="mdi mdi-lock-outline mr-1"></i> PAY NOW</button>
             </div>
 
 
@@ -217,6 +217,46 @@
 definePageMeta({ layout: 'default' })
     export default {
         name: 'Admin',
-        layout: 'default'
+        layout: 'default',
+        methods: {
+            
+            async createTransactionToken() {
+                try {
+                    const serverKey = 'SB-Mid-server-tUyWZTicrKOaSbSI0cayn-zw'; // Ganti dengan server key Midtrans Anda
+                    const url = 'https://api.sandbox.midtrans.com/v1/payment-links';
+
+                    const requestBody = {
+                    transaction_details: {
+                        order_id: Math.floor(Math.random() * 1000000000), // ID pesanan Anda
+                        gross_amount: 200000, // Jumlah pembayaran
+                    },
+                    credit_card: {
+                        secure: true,
+                    },
+                    };
+
+                    const response = await useFetch(url, {
+                        method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        Authorization: 'Basic ' + btoa(serverKey + ';'),
+                    },
+                    body: JSON.stringify(requestBody),
+                    }).then(res => {
+                        console.log(res.data._value.payment_url)
+                        window.location.href = res.data._value.payment_url
+                    })
+
+                    // window.location.href = response.data.payment_url;
+                } catch (error) {
+                    console.error('Error creating transaction token:', error);
+                }
+
+
+
+
+            },
+        }
+
     }
 </script>
