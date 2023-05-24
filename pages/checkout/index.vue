@@ -1,7 +1,7 @@
 <template>
     <div>
             <breadcrumbs :menu="[{name:'Checkout',url:'/checkout'}]" />
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4" data-aos="fade-up">
             
             
             

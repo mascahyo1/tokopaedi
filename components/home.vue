@@ -1,7 +1,7 @@
 <template>
     <div>
         
-        <div id="exampleWrapper" class="flex justify-center mb-3">
+        <div id="exampleWrapper" class="flex justify-center mb-3" data-aos="fade-in">
           <div id="gallery" class="relative w-full" data-carousel="slide">
             <!-- Carousel wrapper -->
             <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -49,8 +49,8 @@
         <div class="container mx-auto">
             
             <div class="flex justify-between p-4">
-              <div class="dark:text-white text-lg font-bold text-left mb-3">Kategori 1</div>
-              <nuxt-link to="/products" class="dark:text-white text-lg font-bold text-right mb-3">More</nuxt-link>
+              <div class="dark:text-white text-lg font-bold text-left mb-3" data-aos="fade-right">Kategori 1</div>
+              <nuxt-link to="/products" class="dark:text-white text-lg font-bold text-right mb-3" data-aos="fade-left">More</nuxt-link>
  
             </div>
             <div class="flex justify-center flex-wrap">
@@ -69,8 +69,8 @@
             </div>
             
             <div class="flex justify-between p-4">
-              <div class="dark:text-white text-lg font-bold text-left mb-3">Kategori 2</div>
-              <nuxt-link to="/products" class="dark:text-white text-lg font-bold text-right mb-3">More</nuxt-link>
+              <div class="dark:text-white text-lg font-bold text-left mb-3" data-aos="fade-right">Kategori 2</div>
+              <nuxt-link to="/products" class="dark:text-white text-lg font-bold text-right mb-3" data-aos="fade-left">More</nuxt-link>
  
             </div>
             <div class="flex justify-center flex-wrap">
@@ -89,8 +89,8 @@
             </div>
             
             <div class="flex justify-between p-4">
-              <div class="dark:text-white text-lg font-bold text-left mb-3">Kategori 3</div>
-              <nuxt-link to="/products" class="dark:text-white text-lg font-bold text-right mb-3">More</nuxt-link>
+              <div class="dark:text-white text-lg font-bold text-left mb-3" data-aos="fade-right">Kategori 3</div>
+              <nuxt-link to="/products" class="dark:text-white text-lg font-bold text-right mb-3" data-aos="fade-left">More</nuxt-link>
             </div>
             <div class="flex justify-center flex-wrap">
                 <div class="w-full mx-auto p-4 md:w-1/3 lg:w-1/4">

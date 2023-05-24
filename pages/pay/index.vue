@@ -83,7 +83,7 @@ module.exports = {
 <template>
     <div>
         
-        <div class="min-w-screen min-h-screen flex items-center justify-center px-5 pb-10 pt-16">
+        <div data-aos="fade-up" class="min-w-screen min-h-screen flex items-center justify-center px-5 pb-10 pt-16">
 
                 <form action="/pay/success" class="w-full mx-auto rounded-lg bg-white dark:bg-gray-800 shadow-lg p-5 text-gray-700" style="max-width: 600px">
                     <div class="w-full pt-1 pb-5">

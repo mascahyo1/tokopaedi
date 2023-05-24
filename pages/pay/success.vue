@@ -1,7 +1,7 @@
 <template>
     <div>
         
-        <div class="flex items-center justify-center h-screen">
+        <div data-aos="fade-up" class="flex items-center justify-center h-screen">
       <div class="p-1 rounded shadow-lg bg-gradient-to-r from-purple-500 via-green-500 to-blue-500">
         <div class="flex flex-col items-center p-4 space-y-2 bg-white dark:bg-gray-800">
           <svg xmlns="http://www.w3.org/2000/svg" class="text-green-600 w-28 h-28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">

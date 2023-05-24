@@ -42,7 +42,7 @@
             </div>
         
             
-            <div class="text-center mx-auto">
+            <div class="text-center mx-auto mb-5" data-aos="fade-up">
                 <nav aria-label="Page navigation example">
                     <ul class="inline-flex items-center -space-x-px">
                         <li>
@@ -75,7 +75,7 @@
                     </ul>
                 </nav>
             </div>
-
+            <div class="mb-5"></div>
 
         </div>
 

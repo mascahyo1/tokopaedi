@@ -19,7 +19,7 @@ useHead({
     { name: 'description', content: 'My amazing site.' }
   ],
   bodyAttrs: {
-    class: 'dark:bg-gray-900'
+    class: 'dark:bg-gray-900 overflow-x-hidden'
   },
   script: [ { innerHTML: 'console.log(\'Hello world\')' } ]
 })

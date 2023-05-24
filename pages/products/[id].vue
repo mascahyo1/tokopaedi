@@ -3,7 +3,7 @@
         <section class="py-10 font-poppins dark:bg-gray-800">
             <div class="max-w-6xl px-4 mx-auto">
                 <div class="flex flex-wrap mb-24 -mx-4">
-                <div class="w-full px-4 mb-8 md:w-1/2 md:mb-0">
+                <div class="w-full px-4 mb-8 md:w-1/2 md:mb-0" data-aos="fade-right">
                     <div class="sticky top-0 overflow-hidden ">
                     <div class="relative mb-6 lg:mb-10 lg:h-96">
                         <a class="absolute left-0 transform lg:ml-2 top-1/2 translate-1/2" href="#">
@@ -42,7 +42,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="w-full px-4 md:w-1/2">
+                <div class="w-full px-4 md:w-1/2" data-aos="fade-left">
                     <div class="lg:pl-20">
                     <div class="mb-6 ">
                         <span class="px-2.5 py-0.5 text-xs text-blue-600 bg-blue-100 dark:bg-gray-700 rounded-xl dark:text-gray-200">New Arrival</span>

@@ -52,16 +52,16 @@
           <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
             <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <nuxt-link to="/admin" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</nuxt-link>
+                <nuxt-link to="/admin" :class="{' text-blue-700 dark:text-blue-500 ':isActiveExact('/admin'), 'text-gray-900 dark:text-white': !isActiveExact('/admin')}" class="block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 " aria-current="page">Home</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/admin/products" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Products</nuxt-link>
+                <nuxt-link to="/admin/products" :class="{' text-blue-700 dark:text-blue-500 ':isActive('/admin/products'), 'dark:text-white': !isActive('/admin/products')}" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Products</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/admin/orders" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Orders</nuxt-link>
+                <nuxt-link to="/admin/orders" :class="{' text-blue-700 dark:text-blue-500 ':isActive('/admin/orders'), 'dark:text-white': !isActive('/admin/orders')}" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Orders</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/admin/users" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Users</nuxt-link>
+                <nuxt-link to="/admin/users" :class="{' text-blue-700 dark:text-blue-500 ':isActive('/admin/users'), 'dark:text-white': !isActive('/admin/users')}" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Users</nuxt-link>
               </li>
             </ul>
           </div>
@@ -87,6 +87,21 @@ export default {
         },
       ],
     };
+  },
+  
+  computed: {
+    isActive() {
+      return (path) => {
+        return this.$route.path.startsWith(path)
+      }
+    },
+    isActiveExact() {
+      return (path) => {
+        console.log(path)
+        console.log(this.$route.path)
+        return this.$route.path == path
+      }
+    }
   },
   mounted() {
     var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');

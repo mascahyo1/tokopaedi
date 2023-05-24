@@ -1,11 +1,11 @@
 <template>
     <div class="container mx-auto ">
             <breadcrumbs :menu="[{name:'About',url:'/about'}]"/>
-        <div class="text-xl text-bold text-center dark:text-white mb-3 px-4">
+        <div class="text-xl text-bold text-center dark:text-white mb-3 px-4" data-aos="fade-up">
             Tentang Kami
         </div>
-        <img src="https://dummyimage.com/3840x2160/FF0000/FFFFFF" alt="about us" class="w-full p-4 mb-3 rounded-lg">
-        <div class="dark:text-white text-justify mb-3 px-4">
+        <img  data-aos="fade-up" src="https://dummyimage.com/3840x2160/FF0000/FFFFFF" alt="about us" class="w-full p-4 mb-3 rounded-lg">
+        <div  data-aos="fade-up" class="dark:text-white text-justify mb-3 px-4">
             Tokopaedi adalah sebuah platform e-commerce yang didedikasikan untuk menyediakan berbagai kebutuhan sehari-hari dengan kenyamanan berbelanja secara online. Kami percaya bahwa berbelanja dapat menjadi pengalaman yang menyenangkan, praktis, dan terjangkau bagi semua orang.
 
 Di Tokopaedi, kami menawarkan beragam produk dari berbagai kategori seperti elektronik, fashion, peralatan rumah tangga, kecantikan, perlengkapan bayi, dan banyak lagi. Kami berkomitmen untuk menyediakan pilihan produk berkualitas dengan harga yang bersaing, sehingga pelanggan kami dapat menemukan apa pun yang mereka cari dengan mudah dan sesuai dengan anggaran mereka.
