@@ -6,7 +6,7 @@
                 <img class="p-8 rounded-t-lg" src="https://flowbite.com/docs/images/products/apple-watch.png" alt="product image" />
             </nuxt-link>
             <div class="px-5 pb-5">
-                <nuxt-link to="/products">
+                <nuxt-link :to="{name:'products-id', params:{id:1}}">
                     <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
                 </nuxt-link>
                 <div class="flex items-center mt-2.5 mb-5">
