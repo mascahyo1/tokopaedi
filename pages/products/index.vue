@@ -42,9 +42,9 @@
             </div>
         
             
-            <div class="text-center mx-auto mb-5" data-aos="fade-up">
-                <nav aria-label="Page navigation example">
-                    <ul class="inline-flex items-center -space-x-px">
+            <div class="text-center mx-auto mb-5" >
+                <nav aria-label="Page navigation example" >
+                    <ul class="inline-flex items-center -space-x-px" >
                         <li>
                         <a href="#" class="block px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
                             <span class="sr-only">Previous</span>
@@ -75,7 +75,6 @@
                     </ul>
                 </nav>
             </div>
-            <div class="mb-5"></div>
 
         </div>
 
